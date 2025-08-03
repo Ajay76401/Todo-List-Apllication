@@ -60,8 +60,22 @@ form{
     margin-right: 10px;
     margin-left: 10px; 
 }
-
-button{
+#del{
+    min-height :40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+  
+    /* padding-bottom: 6px; */
+    border-width: 0;
+    color: white;
+    text-align: center;
+    
+    padding-top: auto 0;
+    
+    background-color: red;
+}
+#submitTask{
     min-height :50px;
     width: 50px;
     border-radius: 50%;
