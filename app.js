@@ -19,6 +19,14 @@ app.post("/",function(req,res){
     items.push(item);
     res.redirect("/");
 })
+
+app.post("/delete", function(req, res){
+    const index = req.body.itemIndex;
+    items.splice(index, 1);  // Remove item at the given index
+    res.redirect("/");
+});
+
+
 app.listen(8000,function(){
     console.log("server Running...");
 })

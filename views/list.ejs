@@ -17,18 +17,25 @@
 
             <div class="item">
                 <input type="checkbox">
-                <p>  <%= ejes[i] %>  </p>
+                <p>
+                    <%= ejes[i] %>
+                </p>
+                <form action="/delete" method="POST" style="margin-left: auto;">
+                    <input type="hidden" name="itemIndex" value="<%= i %>">
+                    <button type="submit" id="del" ><ion-icon name="trash"></ion-icon></button>
+                </form>
             </div>
 
-         <% } %>
+            <% } %>
 
                 <form action="/" method="post">
                     <input type="text" name="input1" placeholder="Enter the task">
-                    <button type="submit">+</button>
+                    <button type="submit" id="submitTask">+</button>
                 </form>
     </div>
 
-
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
